@@ -1,0 +1,30 @@
+:root {
+  --primary: #0C2340;
+  --secondary: #6A9EC5;
+  --accent: #1B365D;
+  --text-color: #333333;
+  --background-color: #F5F5F5;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+button, .button {
+  background-color: var(--primary);
+  color: white;
+}
+
+button.is-secondary, .button.is-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
