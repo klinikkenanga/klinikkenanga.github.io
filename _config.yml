@@ -2,3 +2,4 @@
 theme: bulma-clean-theme
 title: "Klinik Kenanga"
 logo: /assets/images/logokenanga.png  # Path to your logo image
+custom_css: /assets/css/custom.css
