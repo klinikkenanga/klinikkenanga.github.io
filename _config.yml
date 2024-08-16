@@ -1,4 +1,4 @@
 # _config.yml
 theme: bulma-clean-theme
 title: "Klinik Kenanga"
-force_theme: light
+theme_color: "#0b3d91"
