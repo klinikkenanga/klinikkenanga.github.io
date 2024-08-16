@@ -1,3 +1,3 @@
 # _config.yml
-
+theme: bulma-clean-theme
 title: "Jekyll Actions Demo"
