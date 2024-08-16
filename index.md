@@ -1,68 +1,47 @@
 ---
+title: Bulma Clean Theme
+subtitle: This is the demo site for Bulma Clean Theme
 layout: page
-title: Welcome to Klinik Kenanga
-subtitle: Comprehensive healthcare services in a caring and professional environment.
-description: At Klinik Kenanga, we are dedicated to providing the highest standard of care to our patients.
-hero_height: is-medium
-hero_type: is-primary
-callouts:
-  - title: Our Services
-    icon: stethoscope
-    content: Discover a range of medical services tailored to meet your needs.
-    link: /services/
-    link_text: View Services
-  - title: Contact Us
-    icon: phone
-    content: Get in touch with us for appointments or inquiries.
-    link: /contact/
-    link_text: Get in Touch
+callouts: home_callouts
+show_sidebar: true
 ---
 
-# Welcome to Klinik Kenanga
+# Bulma Clean Theme demo website
 
-At Klinik Kenanga, we provide personalized and comprehensive healthcare services. Our dedicated team of professionals is here to support your well-being.
+This website showcases the options for the Bulma Clean theme. The theme is available as a ruby gem or can be used with GitHub pages. 
 
-## Why Choose Us?
+[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
+![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
+![GitHub Repo stars](https://img.shields.io/github/stars/chrisrhymes/bulma-clean-theme?style=social)
 
-- **Patient-Centered Care**: We prioritize your health and tailor our services to meet your unique needs.
-- **Experienced Team**: Our healthcare professionals are highly trained and committed to your care.
-- **Modern Facilities**: We use the latest medical technology to ensure the best outcomes for our patients.
+## Ruby Gem
 
-## Latest News
+The ruby gem is available on the Ruby Gems website at the following location. [https://rubygems.org/gems/bulma-clean-theme](https://rubygems.org/gems/bulma-clean-theme).
 
-Stay updated with our latest news:
+## Documentation
 
-- [Klinik Kenanga Celebrates 10 Years of Service](/blog/celebrating-10-years)
-- [New Specialist Services Now Available](/services/new-specialist-services)
-- [COVID-19 Vaccination Drive](/news/covid-19-vaccination)
+For full instructions, please see the [Documentation](/bulma-clean-theme/docs/)
 
-## Services
+## Page Layouts
 
-Explore the range of services we offer:
+This demo site showcases the available page layout options. 
 
-- **General Consultation**
-- **Women's Health**
-- **Child Health**
-- **Chronic Disease Management**
-- **Health Screenings**
+* Sidebar
+* Menubar
+* Tabs
+* Footer
+* Hero
+* Contents
+* Landing Page With Callouts
+* Promo Page
+* Sponsors Page
+* Image Gallery
+* Recipe Page
+* Blog
+* Post
 
-## Contact Us
+## Supported By JetBrains
 
-Reach out to us for appointments or any inquiries:
+JetBrains have kindly provided an Open Source licence to aid in the future development of Bulma Clean Theme.
 
-- **Phone**: [Your Phone Number]
-- **Email**: [your.email@klinikkenanga.com](mailto:your.email@klinikkenanga.com)
-- **Address**: [Your Clinic Address]
-- **Operating Hours**: Monday to Friday, 8:00 AM - 5:00 PM
-
-## Follow Us
-
-Stay connected with us on social media:
-
-- **Facebook**: [Klinik Kenanga](#)
-- **Instagram**: [@klinik_kenanga](#)
-- **LinkedIn**: [Klinik Kenanga](#)
-
-## Credits
-
-This site is powered by the [Bulma Clean Theme](https://www.csrhymes.com/bulma-clean-theme/docs/) and [Jekyll](https://jekyllrb.com/).
+[![JetBrains](img/jetbrains-variant-4.svg)](https://www.jetbrains.com/?from=bulma-clean-theme)
