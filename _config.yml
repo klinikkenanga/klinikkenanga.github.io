@@ -1,3 +1,4 @@
 # _config.yml
 theme: bulma-clean-theme
-title: "Jekyll Actions Demo"
+title: "Klinik Kenanga"
+logo: /assets/images/logokenanga.png  # Path to your logo image
