@@ -10,7 +10,7 @@ hero_link: '#'
 hero_link_text: Buy now!
 hero_image: assets/images/smalllogo.png
 hero_image_alt: The hero image alt text
-hero_image_ratio: is-4by5
+hero_image_ratio: image is-2by1
 about_image: https://i.pravatar.cc/400?img=24
 about_image_alt: The about image alt text
 about_title: About the author
