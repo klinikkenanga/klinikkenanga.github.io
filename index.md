@@ -1,7 +1,10 @@
 ---
 layout: page
-title: Klinik Kenanga
+title: Trusted Medical Clinic in Melaka
 subtitle: Comprehensive healthcare services in a caring and professional environment.
+brandingSrc: /assets/images/branding.png
+brandingAlt: Klinik Kenanga
+brandingSize: image is-16by9	
 hero_height: is-large
 hero_link: /page-1/
 hero_link_text: About Us
