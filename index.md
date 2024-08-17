@@ -1,30 +1,65 @@
 ---
-title: My new book title!
-subtitle: Example promo page
-layout: promo-page
-snippet: |-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mollis volutpat dignissim.
-
-  Pellentesque facilisis non urna a suscipit. Aenean et accumsan lorem. Donec diam ex, egestas at fermentum at, sagittis at diam. Nulla vitae lectus nec nulla faucibus gravida.
-hero_link: '#'
-hero_link_text: Buy now!
-hero_image: assets/images/smalllogo.png
-hero_image_alt: The hero image alt text
-hero_image_ratio: image is-2by1
-about_image: https://i.pravatar.cc/400?img=24
-about_image_alt: The about image alt text
-about_title: About the author
-product_code: ABC123
+layout: page
+title: Klinik Kenanga
+subtitle: Comprehensive healthcare services in a caring and professional environment.
+hero_height: is-large
+hero_link: /page-1/
+hero_link_text: About Us
+show_sidebar: false
+callouts: example_callouts
 ---
 
-Donec semper nunc quis quam elementum sodales. Vestibulum eget eros vel odio cursus posuere non nec felis. Nunc porta justo odio, in posuere turpis porttitor id. Morbi fringilla, nisi quis facilisis lobortis, eros sem venenatis arcu, vitae varius est felis eu leo. Donec eleifend sapien in arcu mollis egestas. Fusce consectetur nibh in leo elementum cursus.
+# Welcome to Klinik Kenanga
 
-Etiam in neque quis quam tristique bibendum eu eu lorem. Nulla facilisi. Morbi cursus lacinia suscipit. Maecenas accumsan purus urna, sit amet finibus ligula pellentesque eu. Vivamus risus dui, sagittis id est nec, volutpat rhoncus orci. Nulla fermentum aliquet lectus at congue. Aenean congue elementum libero nec suscipit. Phasellus sed diam ex. Integer et posuere sem.
+At Klinik Kenanga, we are dedicated to providing comprehensive healthcare services in a caring and professional environment. Our team of experienced healthcare professionals is committed to ensuring that every patient receives the highest standard of care.
 
-### Maecenas lacinia lobortis lacus sed gravida
+## About Us
 
-Nunc in nisl at purus mollis vulputate. Sed tincidunt tincidunt risus eget iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum vehicula maximus. Praesent convallis in lectus sit amet viverra. Etiam nec semper dolor, ut varius tortor. Aliquam at varius erat, non tempor urna. Maecenas porta porta nibh. 
+Klinik Kenanga has been serving the community with a focus on personalized and holistic healthcare. We offer a wide range of services to meet the needs of individuals and families, from general medical consultations to specialized care.
 
-### Creating a promo page
+## Our Services
 
-See the documentation for [creating a promo page](/bulma-clean-theme/docs/promo-pages/creating-a-promo-page).
+We provide a variety of medical services to cater to your healthcare needs:
+
+- **General Medical Consultation**: Professional and personalized care for all your health concerns.
+- **Women's Health**: Comprehensive services including prenatal care, gynecological exams, and more.
+- **Child Health**: Pediatric services focusing on the well-being and development of your child.
+- **Chronic Disease Management**: Expert care for managing chronic conditions such as diabetes, hypertension, and asthma.
+- **Health Screenings**: Regular health check-ups and screenings to keep you in the best shape.
+
+## Latest News
+
+Stay updated with the latest news and developments at Klinik Kenanga:
+
+- [Klinik Kenanga Celebrates 10 Years of Service](#): Join us in celebrating a decade of dedicated healthcare service to our community.
+- [New Specialist Services Now Available](#): We are excited to announce the availability of new specialist services to better serve you.
+- [COVID-19 Vaccination Drive](#): Learn more about our ongoing vaccination program and how you can get involved.
+
+## Contact Us
+
+We would love to hear from you. Whether you have a question, need to schedule an appointment, or want to learn more about our services, feel free to reach out:
+
+- **Phone**: [Your Phone Number]
+- **Email**: [your.email@klinikkenanga.com](mailto:your.email@klinikkenanga.com)
+- **Location**: [Your Clinic Address]
+- **Operating Hours**: Monday to Friday, 8:00 AM - 5:00 PM
+
+## Why Choose Us?
+
+At Klinik Kenanga, your health is our priority. We believe in:
+
+- **Patient-Centered Care**: Tailoring our services to meet the unique needs of each patient.
+- **Experienced Team**: Our healthcare professionals are highly trained and dedicated to your well-being.
+- **Modern Facilities**: We utilize the latest medical technology to ensure accurate diagnosis and effective treatment.
+
+## Connect with Us
+
+Follow us on our social media channels for health tips, updates, and more:
+
+- **Facebook**: [Klinik Kenanga](#)
+- **Instagram**: [@klinik_kenanga](#)
+- **LinkedIn**: [Klinik Kenanga](#)
+
+## Credits
+
+This website is built with the [Bulma Clean Theme](https://www.csrhymes.com/bulma-clean-theme/docs/) and powered by [Jekyll](https://jekyllrb.com/).
