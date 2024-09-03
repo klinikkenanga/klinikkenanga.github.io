@@ -3,13 +3,6 @@
 $primary: #ffffff; // Darker blue from the logo
 $link: #433E32;
 $info: #072f5f;
-$hero-darken: #ffffff;
-
-.hero-darken {
-    background-image: linear-gradient(90deg, #CEEBEF 28%, #E3FFA7C7 100%);
-    opacity: 0.5;
-    background-color: rgb(255 255 255 / 24%);
-}
 
 // Import Main CSS file from theme
 @import "main";
