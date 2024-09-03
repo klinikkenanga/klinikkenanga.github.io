@@ -9,6 +9,8 @@ brandingSize: image is-4by3
 hero_height: is-medium
 hero_link: /page-1/
 hero_link_text: About Us
+hero_image: /assets/images/hero.jpeg
+hero_darken: true
 show_sidebar: false
 callouts: example_callouts
 ---
