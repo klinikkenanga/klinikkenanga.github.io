@@ -54,6 +54,9 @@
                 </div>
             </div>
         </section>
+        {% if page.callouts2 %}
+            {% include callouts2.html %}
+        {% endif %}
         {% unless page.hide_footer %}
             {% include footer.html %}
         {% endunless %}

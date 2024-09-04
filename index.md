@@ -13,6 +13,7 @@ hero_image: /assets/images/hero.jpeg
 
 show_sidebar: false
 callouts: callouts
+callouts2: callouts2
 ---
 
 # Welcome to Klinik Kenanga
