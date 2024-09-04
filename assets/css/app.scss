@@ -10,8 +10,12 @@ a.button{
 
 a.button.wa-button{
 background-color: #25d366;
-padding-left: 5px;
-padding-right: 5px;
+
+}
+
+a > span {
+padding-left: 15px;
+padding-right: 15px;
 }
 
 
