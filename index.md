@@ -5,7 +5,7 @@ subtitle1: Trusted Medical Clinic in Melaka
 subtitle2: Comprehensive healthcare services in a caring and professional environment.
 brandingSrc: /assets/images/branding.png
 brandingAlt: Klinik Kenanga
-brandingSize: image is-5by3
+brandingSize: image is-16by9
 hero_height: is-medium
 hero_link: /page-1/
 hero_link_text: About Us
@@ -68,4 +68,4 @@ Follow us on our social media channels for health tips, updates, and more:
 
 ## Credits
 
-This website is built with the [Bulma Clean Theme](https://www.csrhymes.com/bulma-clean-theme/docs/) and powered by [Jekyll](https://jekyllrb.com/).
+Klinik Kenanga  (CKAPS Registration No: 230401-13390-11), Uno Medic Sdn. Bhd. (Company Registration Number: 202401002387)
