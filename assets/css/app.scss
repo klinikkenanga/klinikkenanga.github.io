@@ -5,14 +5,13 @@ $link: #433E32;
 $info: #072f5f;
 
 
-.whatsapp-button {
+button.whatsapp-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: #25D366;
     /* WhatsApp green color */
     color: white;
-    border-radius: 5%;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
