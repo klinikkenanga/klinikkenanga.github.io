@@ -13,7 +13,9 @@ hero_image: /assets/images/hero.jpeg
 
 show_sidebar: false
 callouts: callouts
+calloutsTitle: Our Services
 callouts2: callouts2
+callouts2Title: Our Panel List
 ---
 
 # Welcome to Klinik Kenanga

@@ -4,6 +4,12 @@
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-multiline is-centered">
+                    {% if callouts2Title %}
+                        <div class="column is-12 has-text-centered">
+                            <h2 class="title is-3">{{ callouts2Title }}</h2>
+                        </div>
+                    {% endif %}
+
                     {% for callout in callouts2.items %}
                         <div class="column is-4 has-text-centered">
                             {% if callout.icon %}
