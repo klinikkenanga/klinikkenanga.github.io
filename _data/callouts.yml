@@ -2,40 +2,35 @@ style: is-light
 height: is-medium
 items:
   - title: General Consultation
-    subtitle: Professional and personalized care.
     icon: fa-stethoscope
     description: >
       Klinik Kenanga is the primary point of contact for patients
       seeking general healthcare services. 
 
-  - title: House Calls and Palliative Care.
-    subtitle: Convenience of receiving medical treatment at your home.
+  - title: Home Visits.
     icon: fa-house-medical-circle-check
     description: >
       We provide the convenience of home visits for patients who are unable to visit the clinic. 
-      Additionally, we offer palliative care services, focusing on enhancing the quality of life for
-      individuals with serious illnesses, often in the comfort of their own homes.
 
+  - title: Palliative Care Services
+    icon: fa-bed-pulse
+    description: >
+      We offer palliative care services, focusing on enhancing the quality of life for individuals with serious illnesses, often in the comfort of their own homes.
+      
   - title: Health Screening
-    subtitle: Regular health check-ups and screenings to keep you in the best shape.
     icon: fa-droplet
     description: >
-      These assessments aim to detect potential health issues early, 
-      enabling timely intervention and preventive measures.
+      These assessments aim to detect potential health issues early, enabling timely intervention and preventive measures.
 
   - title: Wound Care
-    subtitle: We support your wound healing journey with personalized attention and modern techniques.
     icon: fa-suitcase-medical
     icon_brand: true
     description: >
-      We specialize in advanced wound care techniques and modern dressing 
-      which includes Negative Pressure Wound Therapy (NPWT) which can accelerate 
-      the healing of complex or chronic wounds.
+      We support your wound healing journey with personalized attention, advanced wound care techniques and modern dressing.
 
   - title: Preventive Vaccination
-    subtitle: Vaccinations for both adults and children.
     icon: fa-syringe
     icon_brand: true
     description: >
-      We offers vaccinations for both adults and children, helping to protect individuals 
-      from various infectious diseases and ensuring that they are up-to-date on their immunizations.
+      We offer preventive vaccinations for both adults and children, helping to protect individuals 
+      from various infectious diseases.
