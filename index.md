@@ -12,7 +12,7 @@ hero_link_text: About Us
 hero_image: /assets/images/hero.jpeg
 
 show_sidebar: false
-callouts: example_callouts
+callouts: callouts
 ---
 
 # Welcome to Klinik Kenanga
@@ -66,6 +66,3 @@ Follow us on our social media channels for health tips, updates, and more:
 - **Instagram**: [@klinik_kenanga](#)
 - **LinkedIn**: [Klinik Kenanga](#)
 
-## Credits
-
-Klinik Kenanga  (CKAPS Registration No: 230401-13390-11), Uno Medic Sdn. Bhd. (Company Registration Number: 202401002387)

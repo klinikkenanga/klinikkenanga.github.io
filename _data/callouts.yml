@@ -1,0 +1,31 @@
+style: is-light
+height: is-medium
+items:
+  - title: General Consultation and Treatment
+    subtitle: Professional and Personalized Care for all your health concerns.
+    icon: fa-stethoscope
+    description: >
+      Klinik Kenanga serves as a primary point of contact for patients
+      seeking general healthcare services. This includes diagnosing and
+      managing common illnesses, providing preventive care, and
+      addressing minor injuries or conditions.
+
+
+  - title: Health Screening
+    subtitle: Regular health check-ups and screenings to keep you in the best shape.
+    icon: fa-droplet
+    description: >
+      Klinik Kenanga provides comprehensive health screening and 
+      medical check-up services. These assessments aim to detect
+      potential health issues early, enabling timely intervention and
+      preventive measures.
+
+  - title: Wound Care
+    subtitle: We're here to support your wound healing journey with personalized attention.
+    icon: fa-bandage
+    icon_brand: true
+    description: >
+      Klinik Kenanga specializes in advanced wound care techniques
+      and modern dressing which includes Negative Pressure Wound
+      Therapy (NPWT) which can accelerate the healing of complex or
+      chronic wounds.
