@@ -10,7 +10,7 @@ url: "https://kenanga.clinic"
 permalink: pretty
 #favicon: /path/to/favicon.png
 #hide_share_buttons: true
-#theme_color: '#eeeeee'
+theme_color: '#b1d5f6'
 #fixed_navbar: top
 #direction: one of <ltr, rtl, auto>, default: ltr
 force_theme: light

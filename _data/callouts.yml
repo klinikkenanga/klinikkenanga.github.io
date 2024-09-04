@@ -1,31 +1,41 @@
 style: is-light
 height: is-medium
 items:
-  - title: General Consultation and Treatment
-    subtitle: Professional and Personalized Care for all your health concerns.
+  - title: General Consultation
+    subtitle: Professional and personalized care.
     icon: fa-stethoscope
     description: >
-      Klinik Kenanga serves as a primary point of contact for patients
-      seeking general healthcare services. This includes diagnosing and
-      managing common illnesses, providing preventive care, and
-      addressing minor injuries or conditions.
+      Klinik Kenanga is the primary point of contact for patients
+      seeking general healthcare services. 
 
+  - title: House Calls and Palliative Care.
+    subtitle: Convenience of receiving medical treatment at your home.
+    icon: fa-house-medical-circle-check
+    description: >
+      We provide the convenience of home visits for patients who are unable to visit the clinic. 
+      Additionally, we offer palliative care services, focusing on enhancing the quality of life for
+      individuals with serious illnesses, often in the comfort of their own homes.
 
   - title: Health Screening
     subtitle: Regular health check-ups and screenings to keep you in the best shape.
     icon: fa-droplet
     description: >
-      Klinik Kenanga provides comprehensive health screening and 
-      medical check-up services. These assessments aim to detect
-      potential health issues early, enabling timely intervention and
-      preventive measures.
+      These assessments aim to detect potential health issues early, 
+      enabling timely intervention and preventive measures.
 
   - title: Wound Care
-    subtitle: We're here to support your wound healing journey with personalized attention.
-    icon: fa-bandage
+    subtitle: We support your wound healing journey with personalized attention and modern techniques.
+    icon: fa-suitcase-medical
     icon_brand: true
     description: >
-      Klinik Kenanga specializes in advanced wound care techniques
-      and modern dressing which includes Negative Pressure Wound
-      Therapy (NPWT) which can accelerate the healing of complex or
-      chronic wounds.
+      We specialize in advanced wound care techniques and modern dressing 
+      which includes Negative Pressure Wound Therapy (NPWT) which can accelerate 
+      the healing of complex or chronic wounds.
+
+  - title: Preventive Vaccination
+    subtitle: Vaccinations for both adults and children.
+    icon: fa-syringe
+    icon_brand: true
+    description: >
+      We offers vaccinations for both adults and children, helping to protect individuals 
+      from various infectious diseases and ensuring that they are up-to-date on their immunizations.
