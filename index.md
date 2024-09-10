@@ -7,8 +7,6 @@ brandingSrc: /assets/images/branding.png
 brandingAlt: Klinik Kenanga
 brandingSize: image is-16by9
 hero_height: is-medium
-hero_link: /page-1/
-hero_link_text: About Us
 hero_image: /assets/images/hero.jpeg
 
 show_sidebar: false
