@@ -1,6 +1,4 @@
---- 
----
-$primary: #ffffff; // Darker blue from the logo
+--- --- $primary: #ffffff; // Darker blue from the logo
 $link: #433E32;
 $info: #072f5f;
 
@@ -18,6 +16,7 @@ $info: #072f5f;
     text-decoration: none;
     padding-left: 12px;
     padding-right: 12px;
+    border: none;
 }
 
 .whatsapp-button:hover {
