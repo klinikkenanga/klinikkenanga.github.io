@@ -1,6 +1,4 @@
---- 
---- 
-$primary: #ffffff; // Darker blue from the logo
+--- --- $primary: #ffffff; // Darker blue from the logo
 $link: #433E32;
 $info: #072f5f;
 
@@ -31,6 +29,29 @@ $info: #072f5f;
     margin: 0;
 }
 
+.waze-button {
+    display: inline-block;
+    background-color: #2DA9E0;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #2DA9E0;
+}
+
+.waze-button:hover {
+    background-color: #1D8ABC;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.waze-button i {
+    margin: 0;
+}
 
 // Import Main CSS file from theme
 @import "main";
