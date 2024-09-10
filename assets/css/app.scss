@@ -31,24 +31,25 @@ $info: #072f5f;
     margin: 0;
 }
 
-.waze-button {
-    display: inline-block;
+.waze-button.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2DA9E0;
     color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 50px;
     text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 2px solid #2DA9E0;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: none;
 }
+
+
 
 .waze-button:hover {
     background-color: #1D8ABC;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .waze-button i {
