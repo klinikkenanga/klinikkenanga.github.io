@@ -1,6 +1,6 @@
 {% if page.listPanel %}
     {% assign listPanel=site.data.[page.listPanel] %}
-    <section class="hero {% if listPanel.height %} {{ listPanel.height }} {% else %} is-medium {% endif %} {{ listPanel.style }}">
+    <section style="{background:white}" class="hero {% if listPanel.height %} {{ listPanel.height }} {% else %} is-medium {% endif %} {{ listPanel.style }}">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-multiline is-centered">
@@ -11,33 +11,12 @@
                     {% endif %}
 
                     {% for callout in listPanel.items %}
-                        <div class="column is-4 has-text-centered">
+                        <div class="column is-2 has-text-centered">
                             {% if callout.icon %}
                                 <div class="icon callout-icon">
                                     {% if callout.icon %}
                                         <img src = "/assets/images/panel/{{ callout.icon }}.webp" alt="{{ callout.title }}">
                                     {% endif %}
-                                </div>
-                            {% endif %}
-                            <p class="title is-5">{{ callout.title }}</p>
-                            <p class="subtitle is-5">{{ callout.subtitle }}</p>
-
-                            {% if callout.description %}
-                                <div class="my-4">
-                                    <div class="content">
-                                        <p>{{ callout.description | newline_to_br }}</p>
-                                    </div>
-                                </div>
-                            {% endif %}
-
-                            {% if callout.call_to_action_name %}
-                                <div class="my-4">
-                                    <a
-                                        href="{{ callout.call_to_action_link | relative_url }}"
-                                        class="button is-primary"
-                                    >
-                                        {{ callout.call_to_action_name }}
-                                    </a>
                                 </div>
                             {% endif %}
                         </div>
