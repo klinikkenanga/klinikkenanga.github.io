@@ -14,11 +14,15 @@
                         <div class="column is-4 has-text-centered">
                             {% if callout.icon %}
                                 <div class="icon callout-icon">
-                                    {% if callout.icon %}
-                                        <img src = "/assets/images/panel/{{ callout.icon }}.webp" alt="{{ callout.title }}">
+                                    {% if callout.icon_brand %}
+                                        <i class="fa-solid {{ callout.icon }} fa-4x"></i>
+                                    {% else %}
+                                        <i class="fa-solid {{ callout.icon }} fa-4x"></i>
                                     {% endif %}
                                 </div>
                             {% endif %}
+                            <p class="title is-5">{{ callout.title }}</p>
+                            <p class="subtitle is-5">{{ callout.subtitle }}</p>
 
                             {% if callout.description %}
                                 <div class="my-4">
