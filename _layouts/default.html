@@ -25,9 +25,13 @@
         {% unless page.hide_hero %}
             {% include hero.html %}
         {% endunless %}
-        {% if page.listPanel %}
+        {% if page.listServices %}
             {% include services.html %}
         {% endif %}
+        {% if page.listPanel %}
+            {% include panel.html %}
+        {% endif %}
+
         <section class="section">
             <div class="container">
                 <div class="columns is-multiline">
@@ -56,9 +60,7 @@
                 </div>
             </div>
         </section>
-        {% if page.listPanel %}
-            {% include panel.html %}
-        {% endif %}
+
         {% unless page.hide_footer %}
             {% include footer.html %}
         {% endunless %}
