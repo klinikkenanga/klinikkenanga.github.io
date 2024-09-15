@@ -25,7 +25,9 @@
         {% unless page.hide_hero %}
             {% include hero.html %}
         {% endunless %}
-        {% include callouts.html %}
+        {% if page.listPanel %}
+            {% include services.html %}
+        {% endif %}
         <section class="section">
             <div class="container">
                 <div class="columns is-multiline">
@@ -54,8 +56,8 @@
                 </div>
             </div>
         </section>
-        {% if page.callouts2 %}
-            {% include callouts2.html %}
+        {% if page.listPanel %}
+            {% include panel.html %}
         {% endif %}
         {% unless page.hide_footer %}
             {% include footer.html %}

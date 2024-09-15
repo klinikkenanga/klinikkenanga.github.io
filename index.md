@@ -10,10 +10,10 @@ hero_height: is-medium
 hero_image: /assets/images/hero.jpeg
 
 show_sidebar: false
-callouts: callouts
-calloutsTitle: Our Services
-callouts2: callouts2
-callouts2Title: Our Panel List
+listServices: services
+listServicesTitle: Our Services
+listPanel: panel
+listPanelTitle: Our Panel List
 ---
 
 # Welcome to Klinik Kenanga

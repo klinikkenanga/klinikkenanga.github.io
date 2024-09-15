@@ -1,16 +1,16 @@
-{% if page.callouts2 %}
-    {% assign callouts2=site.data.[page.callouts2] %}
-    <section class="hero {% if callouts2.height %} {{ callouts2.height }} {% else %} is-medium {% endif %} {{ callouts2.style }}">
+{% if page.listPanel %}
+    {% assign listPanel=site.data.[page.listPanel] %}
+    <section class="hero {% if listPanel.height %} {{ listPanel.height }} {% else %} is-medium {% endif %} {{ listPanel.style }}">
         <div class="hero-body">
             <div class="container">
                 <div class="columns is-multiline is-centered">
-                    {% if page.callouts2Title %}
+                    {% if page.listPanelTitle %}
                         <div class="column is-12 has-text-centered">
-                            <h2 class="title is-3">{{ page.callouts2Title }}</h2>
+                            <h2 class="title is-3">{{ page.listPanelTitle }}</h2>
                         </div>
                     {% endif %}
 
-                    {% for callout in callouts2.items %}
+                    {% for callout in listPanel.items %}
                         <div class="column is-4 has-text-centered">
                             {% if callout.icon %}
                                 <div class="icon callout-icon">
