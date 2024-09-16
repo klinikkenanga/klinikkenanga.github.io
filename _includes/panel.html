@@ -13,11 +13,9 @@
                     {% for callout in listPanel.items %}
                         <div class="column is-3 has-text-centered">
                             {% if callout.icon %}
-                                <div class="icon callout-icon">
                                     {% if callout.icon %}
                                         <img src = "/assets/images/panel/{{ callout.icon }}.webp" alt="{{ callout.title }}">
                                     {% endif %}
-                                </div>
                             {% endif %}
                         </div>
                     {% endfor %}
