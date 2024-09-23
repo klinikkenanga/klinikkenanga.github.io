@@ -7,6 +7,11 @@ items:
       Klinik Kenanga is the primary point of contact for patients
       seeking general healthcare services. 
 
+  - title: Minor Surgery
+    icon: fa-scalpel
+    description: >
+      We perform minor surgical procedures done under local anesthesia in an outpatient setting.
+
   - title: Home Visits.
     icon: fa-house-medical-circle-check
     description: >
