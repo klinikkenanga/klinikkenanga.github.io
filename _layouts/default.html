@@ -25,15 +25,16 @@
         {% unless page.hide_hero %}
             {% include hero.html %}
         {% endunless %}
+        {% if page.googleReview %}
+            {% include greview.html %}
+        {% endif %}
         {% if page.listServices %}
             {% include services.html %}
         {% endif %}
         {% if page.listPanel %}
             {% include panel.html %}
         {% endif %}
-        {% if page.googleReview %}
-            {% include greview.html %}
-        {% endif %}
+
 
         <section class="section">
             <div class="container">
