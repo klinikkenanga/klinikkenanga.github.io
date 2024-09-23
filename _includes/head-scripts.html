@@ -1,2 +1,13 @@
 <!-- head scripts -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Select the anchor element using a query selector
+        const reviewLink = document.querySelector('a[href*="elfsight.com/google-reviews-widget"]');
+        
+        // Check if the element exists and remove it
+        if (reviewLink) {
+            reviewLink.remove();
+        }
+    });
+</script>
