@@ -1,0 +1,10 @@
+{% if page.googleReview%}
+    {% assign googleReview=site.data.[page.googleReview] %}
+    <section class="hero {% if googleReview.height %} {{ googleReview.height }} {% else %} is-medium {% endif %} {{ googleReview.style }}">
+        <div style="background-color:white" class="hero-body">
+            <div class="container">
+                <iframe src="https://www.google.com/maps/reviews/@2.2112946,102.241683,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNILXBPSU9nEAE!2m1!1s0x0:0xdd4866d7a975e773?entry=ttu&g_ep=EgoyMDI0MDkxOC4xIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+{% endif %}

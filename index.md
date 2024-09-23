@@ -14,6 +14,7 @@ listServices: services
 listServicesTitle: Our Services
 listPanel: panel
 listPanelTitle: Our Panel List
+googleReview: googleReview
 ---
 
 # Welcome to Klinik Kenanga
