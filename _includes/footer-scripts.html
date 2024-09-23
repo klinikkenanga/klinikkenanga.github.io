@@ -1,1 +1,14 @@
-<!-- footer scripts -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const intervalId = setInterval(function() {
+            // Select the anchor element using a query selector
+            const reviewLink = document.querySelector('a[href*="elfsight.com/google-reviews-widget"]');
+            
+            // If the element exists, remove it and clear the interval
+            if (reviewLink) {
+                reviewLink.remove();
+                clearInterval(intervalId);
+            }
+        }, 500); // Check every 500 milliseconds
+    });
+</script>
