@@ -16,9 +16,3 @@ listPanel: panel
 listPanelTitle: Our Panel List
 googleReview: googleReview
 ---
-
-# Welcome to Klinik Kenanga
-
-At Klinik Kenanga, we are dedicated to providing comprehensive healthcare services in a caring and professional environment. Our team of experienced healthcare professionals is committed to ensuring that every patient receives the highest standard of care. We offer a wide range of services to meet the needs of individuals and families, from general medical consultations to specialized care.
-
-
