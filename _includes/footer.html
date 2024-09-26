@@ -1,17 +1,5 @@
 <footer class="footer">
     <div class="container">
-        {% if site.footer_menu %}
-            <div class="columns is-multiline">
-                {% for item in site.data[site.footer_menu] %}
-                    <div class="column has-text-centered">
-                        <div>
-                            <a href="{{ item.link | relative_url }}" class="link">{{ item.name }}</a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        {% endif %}
-
         <div class="content is-small has-text-centered">
             <p class="">Klinik Kenanga  (CKAPS Registration No: 230401-13390-11), Uno Medic Sdn. Bhd. (Company Registration Number: 202401002387), 2024</p>
         </div>
