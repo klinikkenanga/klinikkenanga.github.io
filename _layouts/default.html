@@ -26,17 +26,10 @@
             {% include hero.html %}
         {% endunless %}
 
-        {% if page.listServices %}
-            {% include services.html %}
-        {% endif %}
-
-        {% if page.googleReview %}
-            {% include greview.html %}
-        {% endif %}
-
-        {% if page.listPanel %}
-            {% include panel.html %}
-        {% endif %}
+        {% include services.html %}
+        {% include greview.html %}
+        {% include panel.html %}
+        {% include contactus.html %}
 
 
         <section class="section">
