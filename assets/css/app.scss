@@ -4,10 +4,10 @@ $primary: #ffffff; // Darker blue from the logo
 $link: #433E32;
 $info: #072f5f;
 
-html {
+body {
     scroll-behavior: smooth;
-  }
-  
+}
+
 .whatsapp-button.button {
     display: inline-flex;
     align-items: center;

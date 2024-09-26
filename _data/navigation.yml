@@ -1,8 +1,8 @@
 - name: Our Services
-  link: #service
+  link: /#service
 - name: Reviews
-  link: #review
+  link: /#review
 - name: Our Panels
-  link: #panel
+  link: /#panel
   name: Contact Us
-  link: #contact
+  link: /#contact
