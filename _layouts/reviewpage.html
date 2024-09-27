@@ -9,22 +9,15 @@ layout: default2
             margin: 20px 0;
         }
 
-        .stars a {
+        .stars input {
+            display: none;
+        }
+
+        .stars label {
             font-size: 2rem;
             color: #b0bec5;
             cursor: pointer;
             transition: color 0.3s;
-            text-decoration: none;
-        }
-
-        /* Highlight previous stars on hover */
-        .stars a:hover,
-        .stars a:hover ~ a {
-            color: #b0bec5; /* Reset all stars after the hovered one */
-        }
-
-        .stars a:hover ~ a:hover {
-            color: #ffca28; /* Highlight the hovered star and all previous ones */
         }
 
         #feedback-message {
@@ -48,18 +41,37 @@ layout: default2
         .stars-hidden {
             display: none;
         }
+
+        /* Simple rule to ensure unselected stars are grayed out by default */
+        .unselected {
+            color: #b0bec5;
+        }
+
+        /* Selected stars will have a yellow color */
+        .selected {
+            color: #ffca28;
+        }
     </style>
 
-  <div class="container has-text-centered">
+ 
+    <div class="container has-text-centered">
         <h2 class="title is-4">How was your experience with us?</h2>
 
-        <!-- Stars arranged left-to-right using <a> elements -->
         <div class="stars" id="stars-container">
-            <a href="#" class="star" data-value="1"><i class="fas fa-star"></i></a>
-            <a href="#" class="star" data-value="2"><i class="fas fa-star"></i></a>
-            <a href="#" class="star" data-value="3"><i class="fas fa-star"></i></a>
-            <a href="#" class="star" data-value="4"><i class="fas fa-star"></i></a>
-            <a href="#" class="star" data-value="5"><i class="fas fa-star"></i></a>
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1" class="unselected"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2" class="unselected"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3" class="unselected"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4" class="unselected"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5" class="unselected"><i class="fas fa-star"></i></label>
         </div>
 
         <p id="feedback-message" class="is-hidden"></p>
@@ -69,32 +81,68 @@ layout: default2
 
     <!-- JavaScript to handle review redirection and hiding stars -->
     <script>
-        const stars = document.querySelectorAll('.star');
+        const stars = document.querySelectorAll('.stars input');
+        const labels = document.querySelectorAll('.stars label');
         const iframe = document.getElementById('review-iframe');
         const feedbackMessage = document.getElementById('feedback-message');
         const starsContainer = document.getElementById('stars-container');
+        let selectedRating = 0; // To track the selected star rating
 
-        stars.forEach(star => {
-            star.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevent default link behavior
+        // Add hover functionality to each label
+        labels.forEach((label, index) => {
+            label.addEventListener('mouseover', () => highlightStars(index));
+            label.addEventListener('mouseout', () => resetStars());
+        });
 
-                const rating = this.getAttribute('data-value'); // Get the rating value
-
-                // Hide the stars once a rating is selected
-                starsContainer.classList.add('stars-hidden');
-
-                if (rating == 5) {
-                    // Redirect to Google Review page if 5 stars are selected
-                    window.location.href = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
-                } else if (rating < 4) {
-                    // Open Google Form in iframe for less than 4 stars
-                    iframe.src = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?pli=1';
-                    iframe.style.display = 'block';
-                    feedbackMessage.textContent = "We appreciate your feedback! Please let us know how we can improve.";
-                    feedbackMessage.classList.remove('is-hidden');
-                } 
+        // Add click functionality to each star (input)
+        stars.forEach((star, index) => {
+            star.addEventListener('change', function () {
+                selectedRating = index + 1; // Update the selected rating based on clicked star
+                highlightStars(index); // Highlight stars when clicked
+                handleStarClick(this.value); // Handle form redirect based on the star clicked
             });
         });
+
+        // Function to highlight stars on hover or selection
+        function highlightStars(index) {
+            labels.forEach((label, i) => {
+                if (i <= index) {
+                    label.classList.add('selected'); // Highlight previous and current stars
+                    label.classList.remove('unselected');
+                } else {
+                    label.classList.add('unselected'); // Dim future stars
+                    label.classList.remove('selected');
+                }
+            });
+        }
+
+        // Function to reset stars after hover if none are selected
+        function resetStars() {
+            if (selectedRating === 0) { // Only reset if no stars are selected
+                labels.forEach(label => {
+                    label.classList.add('unselected');
+                    label.classList.remove('selected');
+                });
+            } else {
+                highlightStars(selectedRating - 1); // Keep selected stars highlighted
+            }
+        }
+
+        // Function to handle click events on stars
+        function handleStarClick(value) {
+            // Hide the stars after selection
+            starsContainer.classList.add('stars-hidden');
+
+            if (value == 5) {
+                // Redirect to Google Review page if 5 stars are selected
+                window.location.href = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
+            } else if (value < 4) {
+                // Open Google Form in iframe for less than 4 stars
+                iframe.src = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?pli=1';
+                iframe.style.display = 'block';
+                feedbackMessage.textContent = "We appreciate your feedback! Please let us know how we can improve.";
+                feedbackMessage.classList.remove('is-hidden');
+            } 
     </script>
 
 
