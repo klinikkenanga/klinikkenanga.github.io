@@ -2,7 +2,7 @@
 layout: default2
 ---
 <style>
-        body {
+                body {
             font-family: 'Roboto', sans-serif;
             background-color: #f5f5f5;
             padding: 20px;
@@ -66,8 +66,7 @@ layout: default2
         }
     </style>
 
-
-    <div class="container has-text-centered">
+ <div class="container has-text-centered">
         <h2 class="title is-4">How was your experience with us?</h2>
 
         <div class="stars">
@@ -101,13 +100,21 @@ layout: default2
         stars.forEach(star => {
             star.addEventListener('change', function () {
                 if (this.value == 5) {
-                    iframe.src = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
+                    // Redirect to Google Review page if 5 stars are selected
+                    window.location.href = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
+                } else if (this.value < 4) {
+                    // Open Google Form in iframe for less than 4 stars
+                    iframe.src = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?pli=1';
                     iframe.style.display = 'block';
-                    feedbackMessage.textContent = "Thank you for your feedback! Please leave a review on Google.";
+                    feedbackMessage.textContent = "We appreciate your feedback! Please let us know how we can improve.";
                     feedbackMessage.classList.remove('is-hidden');
                 } else {
-                    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?pli=1';
+                    // Hide iframe and reset feedback message for 4 stars
+                    iframe.style.display = 'none';
+                    feedbackMessage.textContent = '';
+                    feedbackMessage.classList.add('is-hidden');
                 }
             });
         });
     </script>
+
