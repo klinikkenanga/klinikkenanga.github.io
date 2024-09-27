@@ -17,6 +17,70 @@
     class="{% if site.fixed_navbar %} has-navbar-fixed-{{ site.fixed_navbar }} {% endif %} {% if site.force_theme %} theme-{{ site.force_theme }} {% endif %}"
 >
     {% include head.html %}
+        <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        h2 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .stars input {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 2rem;
+            color: #b0bec5;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .stars input:checked ~ label,
+        .stars label:hover,
+        .stars label:hover ~ label {
+            color: #ffca28; /* Material Design yellow */
+        }
+
+        #feedback-message {
+            font-size: 1rem;
+            color: #388e3c; /* Material Design green */
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: none;
+            margin-top: 20px;
+        }
+
+        .is-hidden {
+            display: none;
+        }
+    </style>
     <body>
         {% if site.cookie_policy %}
             {% include cookie-banner.html %}
@@ -33,7 +97,7 @@
                 </div>
             </div>
         </section>
-        {% include contactus.html %}
+
         {% include greview.html %}
 
         {% unless page.hide_footer %}
@@ -41,6 +105,8 @@
         {% endunless %}
         <script src="{{ site.baseurl }}/assets/js/app.js" type="text/javascript"></script>
         {%- include footer-scripts.html -%}
+
+        
         </div>
     </body>
 </html>
