@@ -20,19 +20,23 @@ layout: default2
             transition: color 0.3s;
         }
 
-        /* Highlighting stars from left to right when hovered */
+        /* Highlight all previous stars and current one on hover */
         .stars label:hover,
         .stars label:hover ~ label {
-            color: #ffca28; /* Material Design yellow */
+            color: #b0bec5; /* Reset the color for stars after the hovered one */
+        }
+
+        .stars label:hover ~ input ~ label {
+            color: #ffca28; /* Highlight the stars before and the hovered one */
         }
 
         /* When selected, highlight stars from left to right */
         .stars input:checked ~ label {
-            color: #b0bec5; /* Reset all stars after the selected star */
+            color: #b0bec5; /* Reset stars after the checked star */
         }
 
         .stars input:checked + label,
-        .stars input:checked + label ~ label {
+        .stars input:checked + label ~ input + label {
             color: #ffca28; /* Highlight the selected star and previous ones */
         }
 
@@ -57,6 +61,7 @@ layout: default2
         .stars-hidden {
             display: none;
         }
+
     </style>
 
  <div class="container has-text-centered">
