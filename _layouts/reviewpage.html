@@ -148,7 +148,7 @@ function handleStarClick(value) {
         console.log("5 stars selected, redirecting to Google Reviews.");
         // Redirect to Google Review page if 5 stars are selected
         window.location.href = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
-    } else if (value < 4) {
+    } else if (value < 5) {
         console.log("Less than 4 stars selected, showing Google Form in iframe.");
         // Open Google Form in iframe for less than 4 stars
         iframe.src = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?pli=1';
