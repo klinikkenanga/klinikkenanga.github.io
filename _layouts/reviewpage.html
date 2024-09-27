@@ -1,0 +1,47 @@
+---
+layout: default
+---
+    <div class="container has-text-centered">
+        <h2 class="title is-4">How was your experience with us?</h2>
+
+        <div class="stars">
+            <input type="radio" name="rating" id="star5" value="5">
+            <label for="star5"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star4" value="4">
+            <label for="star4"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star3" value="3">
+            <label for="star3"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star2" value="2">
+            <label for="star2"><i class="fas fa-star"></i></label>
+
+            <input type="radio" name="rating" id="star1" value="1">
+            <label for="star1"><i class="fas fa-star"></i></label>
+        </div>
+
+        <p id="feedback-message" class="is-hidden"></p>
+
+        <iframe id="review-iframe"></iframe>
+    </div>
+
+    <!-- JavaScript to handle review redirection -->
+    <script>
+        const stars = document.querySelectorAll('.stars input');
+        const iframe = document.getElementById('review-iframe');
+        const feedbackMessage = document.getElementById('feedback-message');
+
+        stars.forEach(star => {
+            star.addEventListener('change', function () {
+                if (this.value == 5) {
+                    iframe.src = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
+                    iframe.style.display = 'block';
+                    feedbackMessage.textContent = "Thank you for your feedback! Please leave a review on Google.";
+                    feedbackMessage.classList.remove('is-hidden');
+                } else {
+                    window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?pli=1';
+                }
+            });
+        });
+    </script>
