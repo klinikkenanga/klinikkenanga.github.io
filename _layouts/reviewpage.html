@@ -80,14 +80,7 @@ layout: default2
 
     <!-- JavaScript to handle review redirection and hiding stars -->
     <script>
-        const stars = document.querySelectorAll('.stars input');
-        const labels = document.querySelectorAll('.stars label');
-        const iframe = document.getElementById('review-iframe');
-        const feedbackMessage = document.getElementById('feedback-message');
-        const starsContainer = document.getElementById('stars-container');
-        let selectedRating = 0; // To track the selected star rating
-
- // Add hover functionality to each label (star)
+     // Add hover functionality to each label (star)
 labels.forEach((label, index) => {
     label.addEventListener('mouseover', () => {
         console.log(`Hovering over star ${index + 1}`);
@@ -148,15 +141,49 @@ function handleStarClick(value) {
         console.log("5 stars selected, redirecting to Google Reviews.");
         // Redirect to Google Review page if 5 stars are selected
         window.location.href = 'https://www.google.com/maps/place//data=!4m3!3m2!1s0x31d1f1614542615f:0xdd4866d7a975e773!12e1?source=g.page.m.ia._&laa=nmx-review-solicitation-ia2';
-    } else if (value < 5) {
+    } else if (value < 4) {
         console.log("Less than 4 stars selected, showing Google Form in iframe.");
         // Open Google Form in iframe for less than 4 stars
         iframe.src = 'https://docs.google.com/forms/d/e/1FAIpQLSck8sq-d_Gl3qz2h4SMg0yWWlh4u840fDtXYlFdXSPOWCJnmQ/viewform?embedded=true';
         iframe.style.display = 'block';
         feedbackMessage.textContent = "We appreciate your feedback! Please let us know how we can improve.";
         feedbackMessage.classList.remove('is-hidden');
-    } 
+    } else {
+        console.log("4 stars selected, no action required.");
+        // Hide iframe and reset feedback message for 4 stars
+        iframe.style.display = 'none';
+        feedbackMessage.textContent = '';
+        feedbackMessage.classList.add('is-hidden');
+    }
 }
+
+// Reset everything on page load or reload
+window.onload = function () {
+    console.log("Page reloaded or visited again, resetting everything.");
+
+    // Reset selected rating
+    selectedRating = 0;
+
+    // Reset stars
+    labels.forEach(label => {
+        label.classList.add('unselected');
+        label.classList.remove('selected');
+    });
+
+    // Show stars if they were hidden
+    starsContainer.classList.remove('stars-hidden');
+
+    // Hide the iframe and reset feedback message
+    iframe.style.display = 'none';
+    feedbackMessage.textContent = '';
+    feedbackMessage.classList.add('is-hidden');
+
+    // Clear any selected input (radio buttons)
+    stars.forEach(star => {
+        star.checked = false;  // Uncheck all radio buttons
+    });
+};
+
 </script>
 
 
