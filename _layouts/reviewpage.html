@@ -80,7 +80,14 @@ layout: default2
 
     <!-- JavaScript to handle review redirection and hiding stars -->
     <script>
-     // Add hover functionality to each label (star)
+        const stars = document.querySelectorAll('.stars input');
+        const labels = document.querySelectorAll('.stars label');
+        const iframe = document.getElementById('review-iframe');
+        const feedbackMessage = document.getElementById('feedback-message');
+        const starsContainer = document.getElementById('stars-container');
+        let selectedRating = 0; // To track the selected star rating
+
+// Add hover functionality to each label (star)
 labels.forEach((label, index) => {
     label.addEventListener('mouseover', () => {
         console.log(`Hovering over star ${index + 1}`);
